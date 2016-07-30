@@ -1,0 +1,41 @@
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+<title>IMDB-top-100 Movies</title>
+</head
+<body>
+  <h1>Movies</h1>
+  
+<table>
+  <tr>
+    <th>S.No.</th>
+    <th>Name</th>
+    <th>Language</th>
+    <th>Country</th>
+  </tr>
+  <% @movies.each_with_index do |movie, index| %>
+  <tr>
+    <td><%= index+1 %></td>
+    <td><%= movie.name %></td>
+    <td><%= movie.language %></td>
+    <td><%= movie.country %></td>
+  </tr>
+  <% end %>
+</table>
+
+</body>

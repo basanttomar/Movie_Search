@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MovieSearch</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<header>
+<ul class="nav">
+  <li><%= link_to 'Your movie', movies_search_path %></li>
+  <li><%= link_to 'All Movies', movies_path %></li>
+  
+</ul>
+</header>
+<%= yield %>
+
+</body>
+
+</html>
